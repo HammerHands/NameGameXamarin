@@ -51,6 +51,7 @@
     <Compile Include="Models\Question.cs" />
     <Compile Include="Services\NameGameService.cs" />
     <Compile Include="Services\QuestionFactory.cs" />
+    <Compile Include="ViewModels\StandardViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -85,6 +86,7 @@
     <Folder Include="GameTypes\" />
     <Folder Include="Services\" />
     <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

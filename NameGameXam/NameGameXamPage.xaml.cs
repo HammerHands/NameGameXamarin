@@ -11,7 +11,7 @@ namespace NameGameXam
 
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new GameTypes.Standard());
+            await Navigation.PushAsync(new GameTypes.Standard(new ViewModels.StandardViewModel()));
         }
     }
 }
