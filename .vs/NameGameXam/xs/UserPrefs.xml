@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{F1ED905A-08D6-491E-B343-D01A16111CC0}|Default">
+  <MonoDevelop.Ide.ItemProperties.NameGameXam.Droid PreferredExecutionTarget="Android.Nexus6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NameGameXam/NameGameXamPage.xaml">
+    <Files>
+      <File FileName="NameGameXam/GameTypes/Standard.xaml" Line="11" Column="13" />
+      <File FileName="NameGameXam/GameTypes/Standard.xaml.cs" Line="75" Column="31" />
+      <File FileName="NameGameXam/NameGameXamPage.xaml" Line="6" Column="108" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.NameGameXam.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.16873A71-D5F9-4B3D-B33D-61478139B240" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -11,7 +11,8 @@
 namespace NameGameXam {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/dalemathieu/Projects/NameGameXam/NameGameXam/NameGameXamPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/dalemathieu/Documents/GitHub/NameGameXamarin/NameGameXam/NameGameXamPage.x" +
+        "aml")]
     public partial class NameGameXamPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
