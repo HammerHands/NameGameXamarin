@@ -51,7 +51,7 @@
     <Compile Include="Models\Question.cs" />
     <Compile Include="Services\NameGameService.cs" />
     <Compile Include="Services\QuestionFactory.cs" />
-    <Compile Include="ViewModels\StandardViewModel.cs" />
+    <Compile Include="ViewModels\QuestionViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

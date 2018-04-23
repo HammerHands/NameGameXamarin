@@ -5,7 +5,7 @@ using NameGameXam.Models;
 
 namespace NameGameXam.ViewModels
 {
-    public class StandardViewModel
+    public class QuestionViewModel
     {
         public Question question { get; set; }
 
@@ -17,7 +17,7 @@ namespace NameGameXam.ViewModels
 
         public int NumberRemoved { get; set; }
 
-        public StandardViewModel()
+        public QuestionViewModel()
         {
             TimesGuessed = 0;
             NumberCorrect = 0;
@@ -43,9 +43,9 @@ namespace NameGameXam.ViewModels
             return false;
         }
 
-        public string GetPercentText()
+        public string GetAccuracyText()
         {
-            return $"{NumberCorrect}/{TimesGuessed}({Math.Round((decimal)NumberCorrect / (decimal)TimesGuessed) * 100}%)";
+            return $"{NumberCorrect}/{TimesGuessed}";
         }
     }
 }

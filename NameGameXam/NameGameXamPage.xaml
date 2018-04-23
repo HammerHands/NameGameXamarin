@@ -4,7 +4,8 @@
     <ContentPage.Content>
         
         <StackLayout VerticalOptions="Center">
-            <Button Text="Standard" Clicked="Handle_Clicked"/>
+            <Button Text="Standard" Clicked="StandardClick"/>
+            <Button Text="Reverse" Clicked="ReverseClick" IsVisible="false"/>
         </StackLayout>
         
     </ContentPage.Content>

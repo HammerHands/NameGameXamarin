@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.NameGameXam.Droid PreferredExecutionTarget="Android.Nexus6" />
   <MonoDevelop.Ide.Workbench ActiveDocument="NameGameXam/GameTypes/Standard.xaml.cs">
     <Files>
-      <File FileName="NameGameXam/GameTypes/Standard.xaml" Line="73" Column="1" />
-      <File FileName="NameGameXam/GameTypes/Standard.xaml.cs" Line="214" Column="30" />
-      <File FileName="NameGameXam/ViewModels/StandardViewModel.cs" Line="16" Column="58" />
-      <File FileName="NameGameXam/NameGameXamPage.xaml.cs" Line="14" Column="100" />
+      <File FileName="NameGameXam/GameTypes/Standard.xaml" Line="74" Column="62" />
+      <File FileName="NameGameXam/GameTypes/Standard.xaml.cs" Line="187" Column="47" />
+      <File FileName="NameGameXam/ViewModels/QuestionViewModel.cs" Line="5" Column="1" />
+      <File FileName="NameGameXam/NameGameXamPage.xaml.cs" Line="20" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

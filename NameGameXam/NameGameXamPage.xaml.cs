@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace NameGameXam
 {
@@ -9,9 +10,14 @@ namespace NameGameXam
             InitializeComponent();
         }
 
-        async void Handle_Clicked(object sender, System.EventArgs e)
+        async void StandardClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GameTypes.Standard(new ViewModels.StandardViewModel()));
+            await Navigation.PushAsync(new GameTypes.Standard(new ViewModels.QuestionViewModel()));
+        }
+
+        async void ReverseClick(object sender, EventArgs args)
+        {
+            //await Navigation.PushAsync(new GameTypes.Reverse(new ViewModels.QuestionViewModel()));
         }
     }
 }

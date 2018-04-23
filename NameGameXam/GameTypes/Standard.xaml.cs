@@ -8,9 +8,9 @@ namespace NameGameXam.GameTypes
 {
     public partial class Standard : ContentPage
     {
-        StandardViewModel vm;
+        QuestionViewModel vm;
 
-        public Standard(StandardViewModel viewModel)
+        public Standard(QuestionViewModel viewModel)
         {
             InitializeComponent();
             BindingContext = this.vm = viewModel;
@@ -21,13 +21,15 @@ namespace NameGameXam.GameTypes
             base.OnAppearing();
             Loading.IsRunning = true;
             await vm.NewQuestion(Question.Type.Standard);
-            FillContent();
             Loading.IsRunning = false;
+            FillContent();
         }
 
         void FillContent()
         {
             matchThis.Text = vm.question.CorrectProfile.FullName;
+            matchThis.IsVisible = true;
+            Accuracy.IsVisible = true;
 
             name1.Text = vm.GetName(0);
             pic1.Source = vm.FormUrl(0);
@@ -45,6 +47,7 @@ namespace NameGameXam.GameTypes
             pic5.Source = vm.FormUrl(4);
 
             Next.IsVisible = true;
+            Mat.IsVisible = true;
             Hint.IsVisible = true;
         }
 
@@ -53,6 +56,15 @@ namespace NameGameXam.GameTypes
             Loading.IsRunning = true;
             Reset();
             await vm.NewQuestion(Question.Type.Standard);
+            FillContent();
+            Loading.IsRunning = false;
+        }
+
+        async void NewMatQuestion(object sender, EventArgs args)
+        {
+            Loading.IsRunning = true;
+            Reset();
+            await vm.NewQuestion(Question.Type.Mat);
             FillContent();
             Loading.IsRunning = false;
         }
@@ -124,6 +136,9 @@ namespace NameGameXam.GameTypes
 
         void Reset()
         {
+            matchThis.IsVisible = false;
+            Accuracy.IsVisible = false;
+
             option1.BackgroundColor = this.BackgroundColor;
             option1.IsVisible = true;
             name1.IsVisible = false;
@@ -145,6 +160,8 @@ namespace NameGameXam.GameTypes
             name5.IsVisible = false;
 
             Next.IsVisible = false;
+            Mat.IsVisible = false;
+            Hint.IsVisible = false;
         }
 
         void IsCorrect(object sender, EventArgs args)
@@ -167,7 +184,7 @@ namespace NameGameXam.GameTypes
                 }
             }
 
-            Accuracy.Text = vm.GetPercentText();
+            Accuracy.Text = vm.GetAccuracyText();
             Accuracy.IsVisible = true;
         }
 
