@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:NameGameXam" x:Class="NameGameXam.NameGameXamPage">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" Padding="20" VerticalOptions="Fill">
+            <Button Text="Standard" Clicked="Handle_Clicked"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

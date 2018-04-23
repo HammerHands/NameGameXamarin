@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NameGameXam.GameTypes.Standard">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+
+            <ActivityIndicator IsRunning="false" Color="Blue" BackgroundColor="Transparent" VerticalOptions="Center" 
+                               HorizontalOptions="Center" x:Name="Loading"
+                               RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.28}"/>
+            
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="matchThis"/>
+
+            <StackLayout x:Name="option1">
+                <Label IsVisible="false" x:Name="name1"/>
+                <Image AutomationId="1" HorizontalOptions="Fill" VerticalOptions="Fill" x:Name="pic1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IsCorrect" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+            <StackLayout x:Name="option2">
+                <Label IsVisible="false" x:Name="name2"/>
+                <Image AutomationId="2" HorizontalOptions="Fill" VerticalOptions="Fill" x:Name="pic2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IsCorrect" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+            <StackLayout x:Name="option3">
+                <Label IsVisible="false" x:Name="name3"/>
+                <Image AutomationId="3" HorizontalOptions="Fill" VerticalOptions="Fill" x:Name="pic3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IsCorrect" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>        
+                </Image>
+            </StackLayout>
+
+            <StackLayout x:Name="option4">
+                <Label IsVisible="false" x:Name="name4"/>
+                <Image AutomationId="4" HorizontalOptions="Fill" VerticalOptions="Fill" x:Name="pic4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IsCorrect" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>        
+                </Image>
+            </StackLayout>
+
+            <StackLayout x:Name="option5">
+                <Label IsVisible="false" x:Name="name5"/>
+                <Image AutomationId="5" HorizontalOptions="Fill" VerticalOptions="Fill" x:Name="pic5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="IsCorrect" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>        
+                </Image>
+            </StackLayout>
+            
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
